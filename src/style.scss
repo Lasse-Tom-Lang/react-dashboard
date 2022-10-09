@@ -1,0 +1,43 @@
+
+$mainColor: rgb(21, 62, 134);
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: $mainColor;
+  overflow: hidden;
+}
+
+main,nav{
+  position: absolute;
+}
+
+#navBar-left {
+  width: 40px;
+  height: calc(100vh - 40px);
+  top: 40px;
+}
+
+#navBar-top {
+  width: 100vw;
+  height: 40px;
+
+  img:first-of-type {
+    width: 50px;
+    aspect-ratio: 1;
+    margin: 5px;
+  }
+}
+
+main {
+  background-color: rgb(230, 230, 230);
+  border-top-left-radius: 40px;
+  top: 40px;
+  left: 40px;
+  width: calc(100vw - 40px);
+  height: calc(100vh - 40px);
+}
