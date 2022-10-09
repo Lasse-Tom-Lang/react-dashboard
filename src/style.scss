@@ -1,3 +1,5 @@
+@use "./NavBar/NavBar.scss";
+@use "./Main/Main.scss";
 
 $mainColor: rgb(21, 62, 134);
 
@@ -14,30 +16,4 @@ body {
 
 main,nav{
   position: absolute;
-}
-
-#navBar-left {
-  width: 40px;
-  height: calc(100vh - 40px);
-  top: 40px;
-}
-
-#navBar-top {
-  width: 100vw;
-  height: 40px;
-
-  img:first-of-type {
-    width: 50px;
-    aspect-ratio: 1;
-    margin: 5px;
-  }
-}
-
-main {
-  background-color: rgb(230, 230, 230);
-  border-top-left-radius: 40px;
-  top: 40px;
-  left: 40px;
-  width: calc(100vw - 40px);
-  height: calc(100vh - 40px);
 }
