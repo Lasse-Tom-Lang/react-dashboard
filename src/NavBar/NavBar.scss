@@ -1,7 +1,31 @@
 #navBar-left {
   width: 120px;
-  height: calc(100vh - 40px);
+  height: calc(100vh - 80px);
   top: 40px;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  button {
+    width: calc(100% - 10px);
+    background-color: white;
+    border: 0;
+    outline: 0;
+    font-size: 24px;
+    padding-block: 4px;
+    border-top: 1px solid grey;
+    cursor: pointer;
+
+    &:first-of-type {
+      border-radius: 10px 10px 0 0;
+      border-top: 0;
+    }
+
+    &:last-of-type {
+      border-radius: 0 0 10px 10px;
+    }
+  }
 }
 
 #navBar-top {
@@ -22,15 +46,15 @@
 #profileInfo {
   background-color: white;
   width: 200px;
-  height: 30px;
-  margin: 5px;
+  height: 32px;
+  margin: 4px;
   border-radius: 15px;
   display: flex;
   align-items: center;
   font-size: 25px;
   
   img {
-    height: 28px;
+    height: 30px;
     margin: 1px;
     margin-right: 10px;
     border-radius: 50%;

@@ -1,4 +1,3 @@
-import React from 'react';
 import ProfileImage from "./testProfileImage.jpeg";
 
 function ProfileInfo() {
