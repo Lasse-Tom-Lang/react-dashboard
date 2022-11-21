@@ -1,12 +1,15 @@
 import {FC} from 'react';
 
 interface NavBarItemProps {
-  itemName: string
+  itemName: string,
+  link: string
 }
 
 const NavBarItem:FC<NavBarItemProps> = (props) => {
   return (
-    <button>{props.itemName}</button>
+    <button>
+      {props.itemName}
+    </button>
   );
 }
 
