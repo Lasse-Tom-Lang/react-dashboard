@@ -1,7 +1,15 @@
+import UsersOnline from "./Widgets/UsersOnline";
+
 function Main() {
   return (
     <main>
-      <h1>Main</h1>
+      <UsersOnline usersOnline={12305}/>
+      <div className="widget">
+
+      </div>
+      <div className="widget">
+
+      </div>
     </main>
   );
 }
