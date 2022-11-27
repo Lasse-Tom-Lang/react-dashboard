@@ -1,4 +1,5 @@
 import UsersOnline from "./Widgets/UsersOnline";
+import ServerUtilization from "./Widgets/ServerUtilization";
 
 function Main() {
   return (
@@ -7,9 +8,7 @@ function Main() {
       <div className="widget">
 
       </div>
-      <div className="widget">
-
-      </div>
+      <ServerUtilization/>
     </main>
   );
 }

@@ -31,3 +31,13 @@ main {
     font-size: 25px;
   }
 }
+
+#serverUtilization {
+  height: 70%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  + p {
+    margin-top: 15px;
+    font-size: 25px;
+  }
+}
