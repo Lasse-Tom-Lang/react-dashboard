@@ -1,4 +1,5 @@
 import {FC} from 'react';
+import {Link} from "react-router-dom"
 
 interface NavBarItemProps {
   itemName: string,
@@ -7,9 +8,9 @@ interface NavBarItemProps {
 
 const NavBarItem:FC<NavBarItemProps> = (props) => {
   return (
-    <button>
+    <Link to={props.link}>
       {props.itemName}
-    </button>
+    </Link>
   );
 }
 

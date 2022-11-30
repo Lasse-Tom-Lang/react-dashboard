@@ -3,7 +3,7 @@ import ServerUtilization from "./Widgets/ServerUtilization";
 
 function Main() {
   return (
-    <main>
+    <main id="main">
       <UsersOnline usersOnline={12305}/>
       <div className="widget">
 
