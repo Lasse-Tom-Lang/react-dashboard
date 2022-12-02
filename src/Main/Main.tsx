@@ -8,7 +8,7 @@ function Main() {
       <div className="widget">
 
       </div>
-      <ServerUtilization/>
+      <ServerUtilization serverUtilization={240}/>
     </main>
   );
 }
