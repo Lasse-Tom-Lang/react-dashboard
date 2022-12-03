@@ -1,11 +1,25 @@
 interface UserProps {
-  userName: string
+  userName: string,
+  role: "user" | "admin",
+  lastOnline: Date
 }
 
-const User : React.FC<UserProps> = (props) => {
+const User: React.FC<UserProps> = (props) => {
   return (
     <div className="userListItem">
-      {props.userName}
+      <span>
+        {props.userName}
+      </span>
+      <span>
+        {props.role}
+      </span>
+      <span>
+        {props.lastOnline.toLocaleString('en-US', {
+          year: 'numeric',
+          month: 'numeric',
+          day: 'numeric'
+        })}
+      </span>
     </div>
   )
 }

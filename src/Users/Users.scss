@@ -3,6 +3,16 @@
   padding: 10px;
   border-radius: 15px;
   margin-top: 10px;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &>div:first-of-type {
+    padding-inline: 15px;
+    padding-block: 10px;
+  }
 }
 
 .userListItem {

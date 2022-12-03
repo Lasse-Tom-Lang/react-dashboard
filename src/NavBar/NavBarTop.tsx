@@ -7,7 +7,7 @@ function NavBarTop() {
     <nav id='navBar-top'>
       <img src={Logo} alt="Logo"/>
       <Watch/>
-      <ProfileInfo/>
+      <ProfileInfo name="Admin"/>
     </nav>
   );
 }

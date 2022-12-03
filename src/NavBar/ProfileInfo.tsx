@@ -1,10 +1,16 @@
 import ProfileImage from "./testProfileImage.jpeg";
 
-function ProfileInfo() {
+interface ProfileInfoProps {
+  name: string
+}
+
+const ProfileInfo: React.FC<ProfileInfoProps> = (props) => {
   return (
     <div id='profileInfo'>
-      <p>Name</p>
-      <img src={ProfileImage} alt="You"/>
+      <p>
+        {props.name}
+      </p>
+      <img src={ProfileImage} alt="You" />
     </div>
   );
 }
