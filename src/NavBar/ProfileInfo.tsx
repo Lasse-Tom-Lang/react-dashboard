@@ -1,4 +1,5 @@
 import ProfileImage from "./testProfileImage.jpeg";
+import { Link } from "react-router-dom";
 
 interface ProfileInfoProps {
   name: string
@@ -6,12 +7,14 @@ interface ProfileInfoProps {
 
 const ProfileInfo: React.FC<ProfileInfoProps> = (props) => {
   return (
-    <div id='profileInfo'>
-      <p>
-        {props.name}
-      </p>
-      <img src={ProfileImage} alt="You" />
-    </div>
+    <Link to={"/profile"} >
+      <div id='profileInfo'>
+        <p>
+          {props.name}
+        </p>
+        <img src={ProfileImage} alt="You" />
+      </div>
+    </Link>
   );
 }
 

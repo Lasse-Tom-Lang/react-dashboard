@@ -3,6 +3,7 @@
 @use "./Users/Users.scss";
 @use "./Notes/Notes.scss";
 @use "./Logs/Logs.scss";
+@use "./Profile/Profile.scss";
 
 $mainColor: rgb(21, 62, 134);
 
@@ -15,6 +16,10 @@ $mainColor: rgb(21, 62, 134);
 body {
   background-color: $mainColor;
   overflow: hidden;
+}
+
+a {
+  text-decoration: none;
 }
 
 main,nav{

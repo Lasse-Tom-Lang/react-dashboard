@@ -15,7 +15,6 @@
     font-size: 24px;
     padding-block: 4px;
     border-top: 1px solid grey;
-    text-decoration: none;
     color: black;
     text-align: center;
 
@@ -63,6 +62,10 @@
     object-fit: cover;
     position: absolute;
     right: 0;
+  }
+
+  p {
+    color: black;
   }
 }
 
