@@ -1,6 +1,9 @@
+import { Link } from "react-router-dom"
+
 interface NoteProps {
   title: string
   previewText: string
+  noteID: string
 }
 
 const Note:React.FC<NoteProps> = (props) => {
@@ -12,9 +15,9 @@ const Note:React.FC<NoteProps> = (props) => {
       <p>
         {props.previewText}
       </p>
-      <button>
+      <Link to={"/notes/" + props.noteID}>
         Open note
-      </button>
+      </Link>
     </div>
   )
 }
