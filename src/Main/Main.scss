@@ -44,3 +44,25 @@ main {
     font-size: 25px;
   }
 }
+
+#infos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+:is(.info, .error) {
+  height: calc(100% - 1rem);
+  border-radius: 1rem;
+  padding: .5rem;
+}
+
+.info {
+  background-color: yellow;
+}
+
+.error {
+  background-color: red;
+}

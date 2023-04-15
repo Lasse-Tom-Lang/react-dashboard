@@ -1,13 +1,12 @@
 import UsersOnline from "./Widgets/UsersOnline";
 import ServerUtilization from "./Widgets/ServerUtilization";
+import Infos from "./Widgets/Infos";
 
 function Main() {
   return (
     <main id="main">
       <UsersOnline usersOnline={12305}/>
-      <div className="widget">
-
-      </div>
+      <Infos/>
       <ServerUtilization serverUtilization={240}/>
     </main>
   );
